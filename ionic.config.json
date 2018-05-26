@@ -1,6 +1,6 @@
 {
   "name": "siguemeApp",
-  "app_id": "",
+  "app_id": "95517a93",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
