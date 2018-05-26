@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { NavController,
 		 AlertController } from 'ionic-angular';
-import { Slides, Platform, LoadingController } from 'ionic-angular';
+import { Slides, LoadingController } from 'ionic-angular';
 import { AuthProvider } from '../../providers/auth/auth';
 import { TabsPage } from '../tabs/tabs';
 import { UsuarioProvider } from '../../providers/usuario/usuario';
@@ -17,7 +17,7 @@ export class LoginPage {
   constructor( public navCtrl: NavController,
 							 private auth: AuthProvider,
 							 public alertCtrl: AlertController,
-							 private platform:Platform,
+							
 							 public _us: UsuarioProvider,
 							 public loadingCtrl: LoadingController ) {
                 

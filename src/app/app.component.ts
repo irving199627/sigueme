@@ -12,17 +12,16 @@ import { UsuarioProvider } from '../providers/usuario/usuario';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  // rootPage:any = TabsPage;
   rootPage:any;
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,
               public _usuario: UsuarioProvider ) {
     platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
+      
       _usuario.cargarStorage().then(existe => {
         statusBar.styleDefault();
         splashScreen.hide();
 
+        this.rootPage = LoginPage; 
         if (existe) {
           this.rootPage = TabsPage;
         } else {
