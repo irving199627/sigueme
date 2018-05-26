@@ -1,0 +1,32 @@
+<ion-content padding>
+
+    <ion-slides pager>
+
+        <ion-slide>
+            <ion-toolbar>
+            </ion-toolbar>
+            <img src="assets/imgs/img1.png" class="slide-image">
+            <h2 class="slide-title">Inicie Sesión</h2>
+            <p>Debe de ingresar usuario</p>
+            <button ion-button icon-right clear full color="secondary" large (click)="abrirInput()">
+                Ingresar
+                <ion-icon name="arrow-dropright-circle"></ion-icon>
+            </button>
+
+        </ion-slide>
+        <!-- Slides 2 -->
+        <ion-slide>
+            <ion-toolbar>
+            </ion-toolbar>
+
+            <img src="assets/imgs/check.jpg" class="slide-image" />
+            <h2 class="slide-title">¿Listo para empezar?</h2>
+            <button ion-button icon-right clear full large (click)="continuar()">
+                        Continuar
+                        <ion-icon name="arrow-forward"></ion-icon>    
+                </button>
+        </ion-slide>
+
+    </ion-slides>
+
+</ion-content>
